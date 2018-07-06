@@ -1,0 +1,449 @@
+@font-face {
+    font-family: Roboto-Regular;
+    src: url(assets/fonts/Roboto-Regular.ttf);
+	font-style: normal;
+	font-weight: 400;
+}
+@font-face {
+    font-family: Roboto-Black;
+    src: url(assets/fonts/Roboto-Black.ttf);
+	font-style: normal;
+	font-weight: 900;
+}
+
+/*----menu-----------------------------*/
+
+* {
+    box-sizing: border-box;
+}
+.container {
+	width: 60%;
+    margin: 0 auto;
+}
+.menu {
+	margin-top: 50px;
+}
+.menu_list {
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(255,255,255);
+    font-family: Roboto-Regular;
+	font-weight: 500;
+	float: right;
+	margin-top: 35px;
+}
+.logo {
+	display: block;
+    float: left; 
+}
+.mobile_logo {
+	display: none;
+    float: left; 
+    width: 60px;
+    height: 60px;
+}
+li {
+    float: left;
+}
+li a {
+    display: inline-block;
+    color: black;
+    padding: 14px 5px;
+    text-decoration: none;
+}
+li a:hover {
+    background-color: rgb(134,128,135);
+}
+.burger {
+	display: none;
+    float: right;
+    cursor: pointer;
+}
+
+/*-----main_section-------------------------*/
+
+.main_section {
+	font-family: Roboto-Black;
+	margin-top: 120px;
+	padding: 0;
+	color: white;
+}
+.title {
+	position: relative;
+	font-size: 2.5vw;
+	width: 34vw;
+	top: 5vw;
+	margin:0;
+    padding: 0 2vw;
+    z-index: 3;
+    text-decoration: none;
+    color: white;
+}
+.left, .right {
+	position: relative;
+	float: left;
+	margin: 0;
+	width: 38.3vw;
+	height: 0;
+	top: 0;
+	left: 0;
+}
+.left {
+	border-top: 25vw solid rgb(255,146,16);
+	border-right: 18.5vw solid transparent;
+}
+.right {
+	margin-left: 6vw ;
+	border-bottom: 25vw solid rgb(255,210,91);
+	border-left: 18.5vw solid transparent;
+	top: -25vw;
+	left: 15vw;
+}
+.left_block, .right_block {
+	position: absolute;
+	font-size: 1.2vw;
+	top: -14.2vw;
+	right: -9vw;
+	width: 9vw;
+	height: 1.5vw; 
+	margin: 1.2vw 3vw;
+	padding: 0;
+	z-index: 1;
+} 
+.right_block {
+	top: 14.3vw;
+	right: 15.9vw;
+}
+.left_img, .right_img, .left_img_button, .right_img_button {
+	position: absolute;
+	top: -14vw;
+	right: -9.1vw;
+	width: 16vw; 
+	height: 3.5vw;
+	margin: 0;
+    background: rgb(93,28,26);
+	transform: skew(-36.3deg);
+	cursor: pointer;
+	z-index: 1;
+}
+.right_img, .right_img_button{
+	top: 14.5vw;
+	right: 15.9vw;
+}
+.left_img_button, .right_img_button {
+	display: none;
+}
+.left_button, .right_button {
+	display: none;
+	position: absolute;
+	margin: 0;
+	width: 0;
+	height: 0;
+	top: 0;
+	left: 0;
+	cursor: pointer;
+}
+.left_button {
+	top: -14vw;
+	left: 0.5vw;
+	border-left: 1.5vw solid rgb(93,28,26);
+	border-top: 0.75vw solid transparent;
+	border-bottom: 0.75vw solid transparent;
+}
+.right_button {
+	top: 11vw;
+	left: 17.7vw;
+	border-right: 1.5vw solid rgb(93,28,26);
+	border-top: 0.75vw solid transparent;
+	border-bottom: 0.75vw solid transparent;
+}
+.left_item, .right_item {
+	display: none;
+	position: relative;
+	width: 8vw;
+	top: 1.5vw;
+	text-align: center;
+}
+
+/*-------mobile_section-----------------------*/
+  
+.mobile_section {
+	display: none;
+	font-family: Roboto-Black;
+	margin: 0;
+	padding: 0;
+	color: white;
+}
+.mobile_title {
+	position: relative;
+	float: left;
+	width: 340px;
+	top: 45px;
+    margin-left: 40px;
+    z-index: 3;
+    font-size: 33px;
+}
+.mobile_left, .mobile_right {
+	position: relative;
+	float: left;
+	margin: 0;
+	width: 93%;
+	height: 0;
+	top: -20px;
+	left: 0;
+}
+.mobile_left {
+	border-top: 540px solid rgb(255,146,16);
+}
+.mobile_right {
+	width: 7%;
+	border-bottom: 540px solid rgb(255,210,91);
+}
+.mobile_left_block, .mobile_right_block {
+	position: absolute;
+	font-size: 25px;
+	top: -408px;
+	left: 105px;
+	width: 190px;
+	height: 30px; 
+	margin: 10px 10px;
+	padding: 0;
+	z-index: 1;
+} 
+.mobile_right_block {
+	display: none;
+	top: 134px;
+    left: 70px;
+ 
+}
+.mobile_left_img, .mobile_right_img  {
+	position: absolute;
+	top: -410px;
+	left: 40px;
+	width: 315px; 
+	height: 55px;
+	margin: 0;
+    background: rgb(93,28,26);
+	cursor: pointer;
+}
+.mobile_right_img {
+	display: none;
+	top: 130px;
+    left: 10px;
+}
+.mobile_left_button, .mobile_right_button {
+	display: block;
+	position: absolute;
+	margin: 0;
+	width: 0;
+	height: 0;
+	top: 0;
+	left: 0;
+	cursor: pointer;
+}
+.mobile_left_button {
+	display: none;
+	top: -270px;
+	left: 6px;
+	border-left: 20px solid rgb(93,28,26);
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+}
+.mobile_right_button {
+	top: 270px;
+	left: 2px;
+	border-right: 20px solid rgb(93,28,26);
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+}
+.mobile_left_item, .mobile_right_item {
+	display: none;
+	position: relative;
+	width: 160px;
+	top: 20px;
+	margin-top: 30px;
+	text-align: center;
+}
+
+/*---------@media----------------------------*/
+
+@media screen and (max-width: 480px) {
+	.container {
+		width: 90%;
+    	margin: auto;
+	}
+	.menu {
+	    margin-top: 30px;
+    }
+    .burger img {
+		padding: 10px 30px ;
+		width: 90%;
+		height: 90%;
+	}
+	li {
+        float: none;
+    }
+	.main_section, .menu_list, .logo {
+		display: none;
+	}
+	.burger,.mobile_section,.mobile_logo {
+		display: block;
+    }
+    .mobile_logo {
+		margin-left: 30px;
+    }
+}
+
+/*---------main_animation-----------------------*/
+
+.point1, .point2, .point3  {
+	position: relative;
+	color: rgb(255,255,255);
+}
+.point1 {
+	animation-name: left_point1;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+@keyframes left_point1 {
+    0% {color: rgb(255,146,16);}
+    30% {color: rgb(255,255,255);}
+    60% {color: rgb(255,255,255);}
+    90% {color: rgb(255,255,255);}
+    100% {color: rgb(255,255,255);}
+}
+@keyframes right_point1 {
+    0% {color: rgb(255,210,91);}
+    30% {color: rgb(255,255,255);}
+    60% {color: rgb(255,255,255);}
+    90% {color: rgb(255,255,255);}
+    100% {color: rgb(255,255,255);}
+}
+.point2 {
+	animation-name: left_point2;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+@keyframes left_point2 {
+    0% {color: rgb(255,146,16)}
+    30% {color: rgb(255,146,16)}
+    60% {color: rgb(255,255,255);}
+    90% {color: rgb(255,255,255);}
+    100% {color: rgb(255,255,255);}
+}
+@keyframes right_point2 {
+    0% {color: rgb(255,210,91)}
+    30% {color: rgb(255,210,91)}
+    60% {color: rgb(255,255,255);}
+    90% {color: rgb(255,255,255);}
+    100% {color: rgb(255,255,255);}
+}
+.point3 {
+	animation-name: left_point3;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+@keyframes left_point3 {
+    0% {color: rgb(255,146,16)}
+    30% {color: rgb(255,146,16)}
+    60% {color: rgb(255,146,16)}
+    90% {color: rgb(255,255,255);}
+    100% {color: rgb(255,255,255);}
+}
+@keyframes right_point3 {
+    0% {color: rgb(255,210,91)}
+    30% {color: rgb(255,210,91)}
+    60% {color: rgb(255,210,91)}
+    90% {color: rgb(255,255,255);}
+    100% {color: rgb(255,255,255);}
+}
+@keyframes left {
+    0% {width: 38.3vw;}
+    100% {width: 97%;}
+}
+@keyframes right {
+    0% {left: 15vw; width: 66%;}
+    100% {left: -3.5vw;; width: 97%;}
+}
+@keyframes left_title {
+    0% {left: 0;}
+    100% {left: 15vw;}
+}
+@keyframes right_title {
+    0% {left: 40vw;}
+    100% {left: 15vw;}
+}
+@keyframes right_img {
+    0% {left: 23.5vw;}
+    100% {left: 17.5vw;}
+}
+@keyframes right_block {
+    0% {left: 23.5vw;}
+    100% {left: 18.5vw;}
+}
+
+/*-------mobile_animation-----------------------*/
+
+.mobile_point1, .mobile_point2, .mobile_point3  {
+	position: relative;
+	color: rgb(255,255,255);
+}
+.mobile_point1 {
+	animation-name: left_point1;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+@keyframes left_point1 {
+    0% {color: rgb(255,146,16);}
+    30% {color: rgb(255,255,255);}
+    60% {color: rgb(255,255,255);}
+    90% {color: rgb(255,255,255);}
+    100% {color: rgb(255,255,255);}
+}
+@keyframes right_point1 {
+    0% {color: rgb(255,210,91);}
+    30% {color: rgb(255,255,255);}
+    60% {color: rgb(255,255,255);}
+    90% {color: rgb(255,255,255);}
+    100% {color: rgb(255,255,255);}
+}
+.mobile_point2 {
+	animation-name: left_point2;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+@keyframes left_point2 {
+    0% {color: rgb(255,146,16)}
+    30% {color: rgb(255,146,16)}
+    60% {color: rgb(255,255,255);}
+    90% {color: rgb(255,255,255);}
+    100% {color: rgb(255,255,255);}
+}
+@keyframes right_point2 {
+    0% {color: rgb(255,210,91)}
+    30% {color: rgb(255,210,91)}
+    60% {color: rgb(255,255,255);}
+    90% {color: rgb(255,255,255);}
+    100% {color: rgb(255,255,255);}
+}
+.mobile_point3 {
+	animation-name: left_point3;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+@keyframes left_point3 {
+    0% {color: rgb(255,146,16)}
+    30% {color: rgb(255,146,16)}
+    60% {color: rgb(255,146,16)}
+    90% {color: rgb(255,255,255);}
+    100% {color: rgb(255,255,255);}
+}
+@keyframes right_point3 {
+    0% {color: rgb(255,210,91)}
+    30% {color: rgb(255,210,91)}
+    60% {color: rgb(255,210,91)}
+    90% {color: rgb(255,255,255);}
+    100% {color: rgb(255,255,255);}
+}
