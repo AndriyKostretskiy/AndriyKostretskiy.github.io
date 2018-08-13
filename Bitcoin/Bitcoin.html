@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="stylesheet.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="js/load.js"></script>
+</head>
+<body>
+ <div class="container-fluid">
+   <div class="row">
+      <div class="col-lg-2"></div>
+      <div class="col-lg-8 main">
+        <nav class="navbar navbar-inverse navi">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">Select currency to exhange:</a>
+          </div>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span id="dropdown_price">USD</span><span class="glyphicon glyphicon-menu-down"></span></a>
+              <ul id="dropdown_menu" class="dropdown-menu">
+                <li><a id="eur" href="#" onclick="EUR()">EUR</a></li>
+                <li><a id="rub" href="#" onclick="RUB()">RUB</a></li>
+                <li><a id="gbp" href="#" onclick="GBP()">GBP</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <ul class="nav navbar-nav nav2">
+          <li>
+          	<div class="panel panel-default panel1">
+              <div class="panel-heading">Ethereum</div>
+              <div class="panel-body">
+              	<table class="tble">
+              	  <thead>
+                    <tr>
+                      <th class="price_text1">Price:</th>
+                      <th class="price">$22 526.92</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="percent_text">Percent change</td>
+                      <td class="percent">
+                      	<div class="slidecontainer">
+                          <input type="range" min="0" max="1" value="0" class="slider" id="myRange1">
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Hour change</td>
+                      <td id="result_hour1" class="result_hour">+266%</td>
+                    </tr>
+                    <tr>
+                      <td>Day change</td>
+                      <td id="result_day1" class="result_day">+266%</td>   
+                    </tr>
+                    <tr>
+                      <td>Week change</td>
+                      <td id="result_week1" class="result_week">+266%</td>   
+                    </tr>
+                    <tr>
+                      <td>Month change</td>
+                      <td id="result_month1" class="result_month">+266%</td>   
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div> 
+          </li>
+          <li>
+          	<div class="panel panel-default panel2">
+              <div class="panel-heading">Litecoin</div>
+              <div class="panel-body">
+              	<table class="tble">
+              	  <thead>
+                    <tr>
+                      <th class="price_text2">Price:</th>
+                      <th class="price">$22 526.92</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="percent_text">Percent change</td>
+                      <td class="percent">
+                      	<div class="slidecontainer">
+                          <input type="range" min="0" max="1" value="0" class="slider" id="myRange2">
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Hour change</td>
+                      <td id="result_hour2" class="result_hour">+266%</td>
+                    </tr>
+                    <tr>
+                      <td>Day change</td>
+                      <td id="result_day2" class="result_day">+266%</td>   
+                    </tr>
+                    <tr>
+                      <td>Week change</td>
+                      <td id="result_week2" class="result_week">+266%</td>   
+                    </tr>
+                    <tr>
+                      <td>Month change</td>
+                      <td id="result_month2" class="result_month">+266%</td>   
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div> 
+          </li>
+          <li>
+          	<div class="panel panel-default panel3">
+              <div class="panel-heading">Bitcoin</div>
+              <div class="panel-body">
+              	<table class="tble">
+              	  <thead>
+                    <tr>
+                      <th class="price_text3">Price:</th>
+                      <th class="price">$22 526.92</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="percent_text">Percent change</td>
+                      <td class="percent">
+                      	<div class="slidecontainer">
+                          <input type="range" min="0" max="1" value="0" class="slider" id="myRange3">
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Hour change</td>
+                      <td id="result_hour3" class="result_hour">+266%</td>
+                    </tr>
+                    <tr>
+                      <td>Day change</td>
+                      <td id="result_day3" class="result_day">+266%</td>   
+                    </tr>
+                    <tr>
+                      <td>Week change</td>
+                      <td id="result_week3" class="result_week">+266%</td>   
+                    </tr>
+                    <tr>
+                      <td>Month change</td>
+                      <td id="result_month3" class="result_month">+266%</td>   
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div> 
+          </li>
+        </ul>  
+      </div>
+      <div class="col-lg-2"></div>
+    </div>
+  </div>
+  <script src="js/currency.js"></script>
+  <script src="js/change.js"></script>
+</body>
+</html>
